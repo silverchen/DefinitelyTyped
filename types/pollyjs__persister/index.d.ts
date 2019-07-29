@@ -3,8 +3,9 @@
 // Definitions by: feinoujc <https://github.com/feinoujc>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-export default class Persister {
+export default class Persister<T> {
     static readonly name: string;
     static readonly type: string;
+    options: T;
     persist(): Promise<void>;
 }
